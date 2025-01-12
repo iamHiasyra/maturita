@@ -49,3 +49,10 @@ glassmorphic
 - Name conflict
 - Syntax, comma and parenthesis
 - MAsk during input
+- gh :
+  - In package.json, add:
+    "scripts": {"predeploy": "npm run build","deploy": "gh-pages -d dist",}
+    Explanation: In my case, I was using Vite to create my React app. 
+    So by running npm run deploy, vite created a 'dist' folder for the production. 
+    But "deploy": "gh-pages -d build" is watching for the build folder. 
+    Now gh-pages will look for dist folder before deployment.
