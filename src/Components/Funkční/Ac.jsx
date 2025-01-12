@@ -3,7 +3,7 @@ import {cva} from "class-variance-authority";
 import {useData, useError, useResult, useTheme} from "../../App.jsx";
 
 
-export function Ac(props) {
+export function Ac() {
     const {data, setData} = useData()
     const {setResult} = useResult()
     const {setError} = useError()
