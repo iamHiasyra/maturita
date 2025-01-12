@@ -2,7 +2,7 @@ import {useData, useError, useResult, useTheme} from "../../App.jsx";
 import {evaluate} from "mathjs";
 import {cva} from "class-variance-authority";
 
-export function Rovnátko(props) {
+export function Rovnátko() {
     const {data} = useData()
     const {setResult} = useResult()
     const {setError} = useError()
