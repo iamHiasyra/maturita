@@ -17,7 +17,7 @@ export function Displej () {
                 <span className={vstup_styl()}>{maska}</span>
             </div>
             <div className={box_styl({intent: theme})}>
-                <span className={výstup_styl()}>{výsledek}</span>
+                <span className={výstup_styl({intents: error && "warning"})}>{výsledek}</span>
             </div>
         </section>
     )
