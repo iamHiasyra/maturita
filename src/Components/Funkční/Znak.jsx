@@ -7,7 +7,6 @@ export function Znak ({symbol, maska}) {
     const {theme} = useTheme();
 
     const handleData = () =>  {
-        if(data.slice(-1) === "*" || data.slice(-1) === "/") {return}
         setData(`${data}${symbol}`)
     }
     return (
