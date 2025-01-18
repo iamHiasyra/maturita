@@ -8,7 +8,7 @@ function Záhlaví() {
     return (
         <div>
             <header className={header_styl({intent: theme})}>
-                <p className={"text-3xl"}>NMĐ</p>
+                <p className={"text-4xl font-extrabold"}>NMĐ</p>
 
             </header>
         </div>

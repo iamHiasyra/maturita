@@ -17,12 +17,12 @@ export function Číslo ({ symbol }) {
 }
 
 const defaultníStyl = cva(
-    "w-full h-10",
+    "w-full h-10 text-2xl",
     {
         variants : {
             intent : {
-                light: ["bg-light-pink", "border-4", "border-black", "font-bold", "text-2xl"],
-                dark: ["bg-dark-yellow", "font-bold", "text-2xl"]
+                light: ["bg-light-pink", "border-4", "border-black", "font-bold"],
+                dark: ["bg-dark-yellow", "font-bold"]
             }
         },
         defaultVariants: {
