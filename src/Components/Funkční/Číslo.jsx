@@ -2,7 +2,7 @@ import {useData, useTheme} from "../../App.jsx";
 import {cva} from "class-variance-authority";
 
 // eslint-disable-next-line react/prop-types
-export function Číslo ({ symbol }) {
+export function Číslo ({symbol}) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const {data, setData} = useData();
     // eslint-disable-next-line react-hooks/rules-of-hooks
