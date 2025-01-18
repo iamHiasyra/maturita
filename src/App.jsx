@@ -14,6 +14,7 @@ export const ResultContext = createContext(null)
 export const ErrorContext = createContext(null)
 export const ThemeContext = createContext(null)
 
+
 function App() {
     const [data, setData] = useState("")
     const [result, setResult] = useState("")
