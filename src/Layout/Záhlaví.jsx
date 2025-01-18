@@ -3,28 +3,13 @@ import {useTheme} from "../App.jsx";
 
 // eslint-disable-next-line react/prop-types
 function Záhlaví() {
-    const {theme, setTheme} = useTheme();
-    const setDarkTheme = () => {
-        setTheme("dark");
-    }
-    const setLightTheme = () => {
-        setTheme("light");
-        document.body.style.backgroundColor = ''
-    }
+    const {theme} = useTheme();
+
     return (
         <div>
             <header className={header_styl({intent: theme})}>
                 <p className={"text-3xl"}>NMĐ</p>
-                <div className={"w-1/4 flex justify-between"}>
-                    <button className={"w-10 h-10 rounded-full border-4 border-black p-1"}
-                            onClick={setDarkTheme}
-                    >1
-                    </button>
-                    <button className={"w-10 h-10 rounded-full border-4 border-black p-1"}
-                            onClick={setLightTheme}
-                    >2
-                    </button>
-                </div>
+
             </header>
         </div>
     );

@@ -5,7 +5,6 @@ function Zápatí() {
     const {theme} = useTheme()
     return (
         <footer className={footer_styl({intent: theme})}>
-            <p>Maturitní práce</p>
         </footer>
     );
 }

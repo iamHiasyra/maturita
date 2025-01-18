@@ -39,7 +39,7 @@ const displej_styl = cva(
 
 )
 const box_styl = cva(
-    "grid items-center overflow-auto",
+    "grid items-center h-[100px] overflow-auto",
     {
         variants : {
             intent : {
@@ -54,11 +54,11 @@ const box_styl = cva(
 )
 
 const vstup_styl = cva (
-    "text-3xl p-5 font-medium"
+    "text-5xl p-5 font-medium"
 )
 
 const výstup_styl = cva(
-    "text-6xl p-5 items-center font-bold", {
+    "text-5xl p-5 items-center font-bold", {
         variants : {
             intents : {
                 warning : ["text-red-500", "text-xl"]
