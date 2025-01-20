@@ -1,4 +1,4 @@
-import {useData, useError, useResult, useTheme} from "../../App.jsx";
+import {useData, useError, useResult, useTheme} from "../App.jsx";
 import {evaluate} from "mathjs";
 import {cva} from "class-variance-authority";
 

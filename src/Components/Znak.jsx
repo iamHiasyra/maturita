@@ -1,4 +1,4 @@
-import {useData, useTheme} from "../../App.jsx";
+import {useData, useTheme} from "../App.jsx";
 import {cva} from "class-variance-authority";
 
 // eslint-disable-next-line react/prop-types

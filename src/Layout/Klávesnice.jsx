@@ -1,8 +1,8 @@
-import {Číslo} from "./Funkční/Číslo.jsx";
-import {Znak} from "./Funkční/Znak.jsx";
-import {Rovnátko} from "./Funkční/Rovnátko.jsx";
-import {Del} from "./Funkční/Del.jsx";
-import {Ac} from "./Funkční/Ac.jsx";
+import {Číslo} from "../Components/Číslo.jsx";
+import {Znak} from "../Components/Znak.jsx";
+import {Rovnátko} from "../Components/Rovnátko.jsx";
+import {Del} from "../Components/Del.jsx";
+import {Ac} from "../Components/Ac.jsx";
 
 
 function Klávesnice() {

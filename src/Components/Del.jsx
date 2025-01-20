@@ -1,21 +1,26 @@
-//AC
+import {useData, useError, useResult, useTheme} from "../App.jsx";
 import {cva} from "class-variance-authority";
-import {useData, useError, useResult, useTheme} from "../../App.jsx";
 
 
-export function Ac() {
+export function Del() {
     const {data, setData} = useData()
-    const {setResult} = useResult()
-    const {setError} = useError()
-    const {theme} = useTheme()
+    const {setResult} = useResult();
+    const {setError} = useError();
+    const {theme} = useTheme();
 
     const handleData = () => {
         if(data === "") return;
-        setData(""); setResult(""); setError("")
+        setData(data.slice(0, -1));
+        setResult("")
+        setError("")
     }
 
     return (
-        <button className={defaultníStyl({intent: theme})} type={"button"} onClick={handleData}>AC</button>
+        <button className={defaultníStyl({intent: theme} )}
+                type={"button"}
+                onClick={handleData}
+        >       Del
+        </button>
     );
 }
 
@@ -29,7 +34,7 @@ const defaultníStyl = cva(
             }
         },
         defaultVariants: {
-            intent: "dark",
+            intent: "light",
         }
     }
 

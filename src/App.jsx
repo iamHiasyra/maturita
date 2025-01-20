@@ -3,9 +3,9 @@ import "./index.css"
 
 import Záhlaví from "./Layout/Záhlaví.jsx";
 import Zápatí from "./Layout/Zápatí.jsx";
-import Klávesnice from "./Components/Klávesnice.jsx";
+import Klávesnice from "./Layout/Klávesnice.jsx";
 
-import {Displej} from "./Components/Displej.jsx";
+import {Displej} from "./Layout/Displej.jsx";
 import {createContext, useContext, useState} from "react";
 import {ThemeButton} from "./Components/ThemeButton.jsx";
 
