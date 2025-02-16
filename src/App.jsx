@@ -1,13 +1,13 @@
 import {cva} from "class-variance-authority";
 import "./index.css"
 
-import Záhlaví from "./Layout/Záhlaví.jsx";
-import Zápatí from "./Layout/Zápatí.jsx";
-import Klávesnice from "./Layout/Klávesnice.jsx";
+import Záhlaví from "./Organismy/Záhlaví.jsx";
+import Zápatí from "./Organismy/Zápatí.jsx";
+import Klávesnice from "./Organismy/Klávesnice.jsx";
 
-import {Displej} from "./Layout/Displej.jsx";
+import {Displej} from "./Organismy/Displej.jsx";
 import {createContext, useContext, useState} from "react";
-import {ThemeButton} from "./Components/ThemeButton.jsx";
+import {ThemeButton} from "./Molekula/ThemeButton.jsx";
 
 export const DataContext = createContext(null)
 export const ResultContext = createContext(null)
@@ -20,9 +20,11 @@ function App() {
     const [result, setResult] = useState("")
     const [error, setError] = useState("")
     const [theme, setTheme] = useState("dark")
+
     if(theme === "dark") {
         document.body.style.backgroundColor = "#302F2F"
     }
+
     return(
         <div className={"w-screen h-screen flex flex-row-reverse items-center justify-center gap-8"}>
             <ThemeContext.Provider value={{theme, setTheme}}>
@@ -43,7 +45,6 @@ function App() {
                     </DataContext.Provider>
                     <Zápatí />
                 </main>
-
             </ThemeContext.Provider>
 
         </div>

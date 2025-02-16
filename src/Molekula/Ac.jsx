@@ -1,4 +1,3 @@
-//AC
 import {cva} from "class-variance-authority";
 import {useData, useError, useResult, useTheme} from "../App.jsx";
 
