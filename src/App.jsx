@@ -67,7 +67,7 @@ const textStyl = cva(
 const app_styl = cva(
     "p-5 w-5/12 flex flex-col gap-5 min-w-[350px] ",
     {
-        variants : {S
+        variants : {
             intent : {
                 light: ["bg-light-yellow", "font-light", "border-4", "border-black"],
                 dark: ["bg-dark-grey", "font-dark", "shadow-[1px_-1px_11px_14px_rgba(255,_249,_231,_0.25)]"]
