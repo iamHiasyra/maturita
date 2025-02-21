@@ -28,28 +28,26 @@ function App() {
     return(
         <div className={"w-screen h-screen flex flex-row-reverse items-center justify-center gap-8"}>
             <ThemeContext.Provider value={{theme, setTheme}}>
-                <div className={"h-[628px] flex flex-col gap-2 "}>
-                    <span className={textStyl({intent: theme})}>Theme</span>
-                    <ThemeButton mode={"dark"}/>
-                    <ThemeButton mode={"light"}/>
-                </div>
-                <main className={app_styl({intent: theme})}>
-                    <Záhlaví/>
-                    <DataContext.Provider value={ {data, setData} }>
-                        <ResultContext.Provider value={ {result, setResult} }>
+                <DataContext.Provider value={ {data, setData} }>
+                    <ResultContext.Provider value={ {result, setResult} }>
                             <ErrorContext.Provider value={ {error, setError} }>
-                                <Displej />
-                                <Klávesnice />
+                                <div className={"h-[628px] flex flex-col gap-2 "}>
+                                    <span className={textStyl({intent: theme})}>Theme</span>
+                                    <ThemeButton mode={"dark"}/>
+                                    <ThemeButton mode={"light"}/>
+                                </div>
+                                <main className={app_styl({intent: theme})}>
+                                    <Záhlaví/>
+                                                <Displej />
+                                                <Klávesnice />
+                                    <Zápatí />
+                                </main>
                             </ErrorContext.Provider>
-                        </ResultContext.Provider>
-                    </DataContext.Provider>
-                    <Zápatí />
-                </main>
+                    </ResultContext.Provider>
+                </DataContext.Provider>
             </ThemeContext.Provider>
-
         </div>
     )
-
 }
 
 const textStyl = cva(
@@ -69,7 +67,7 @@ const textStyl = cva(
 const app_styl = cva(
     "p-5 w-5/12 flex flex-col gap-5 min-w-[350px] ",
     {
-        variants : {
+        variants : {S
             intent : {
                 light: ["bg-light-yellow", "font-light", "border-4", "border-black"],
                 dark: ["bg-dark-grey", "font-dark", "shadow-[1px_-1px_11px_14px_rgba(255,_249,_231,_0.25)]"]
