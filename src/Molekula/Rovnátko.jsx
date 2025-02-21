@@ -14,6 +14,9 @@ export function Rovnátko() {
             let řešení = evaluate(data).toFixed(2)
             let format_celá = new Intl.NumberFormat("cs-CZ").format(řešení)
             setResult(format_celá)
+            if(format_celá === "∞" || format_celá === "NaN") {
+                setError("Matematická chyba -  Dělení nulou")
+            }
         }
         catch (error) {
             setError(error.toString())
