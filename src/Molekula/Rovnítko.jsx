@@ -11,8 +11,8 @@ export function Rovnítko() {
     const evaluateResult = () => {
         if(data === "") return;
         try {
-            let řešení = evaluate(data).toFixed(2)
-            let format_celá = new Intl.NumberFormat("cs-CZ").format(řešení)
+            let řešení = evaluate(data)
+            let format_celá = new Intl.NumberFormat("cs-CZ", { maximumSignificantDigits: 15 }).format(řešení)
             setResult(format_celá)
             if(format_celá === "∞" || format_celá === "NaN") {
                 setError("Matematická chyba -  Dělení nulou")
