@@ -1,6 +1,6 @@
 import {Číslo} from "../Molekula/Číslo.jsx";
 import {Znak} from "../Molekula/Znak.jsx";
-import {Rovnátko} from "../Molekula/Rovnátko.jsx";
+import {Rovnítko} from "../Molekula/Rovnítko.jsx";
 import {Del} from "../Molekula/Del.jsx";
 import {Ac} from "../Molekula/Ac.jsx";
 
@@ -32,7 +32,7 @@ function Klávesnice() {
 
                     <Znak symbol={"."} maska={","}/>
                     <Číslo symbol={0}/>
-                    <Rovnátko/>
+                    <Rovnítko/>
 
                     <Ac/>
                     <Del/>

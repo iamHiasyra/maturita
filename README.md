@@ -32,6 +32,7 @@ which overcomplicate the program. To solve that we use Context, which is public 
 # Design System
 https://atomicdesign.bradfrost.com/chapter-2/
 
+### Theme
 y2k
 minimal
 neobrutalisz
@@ -48,7 +49,7 @@ glassmorphic
 - Context - forget to put it in curly bracket ( object destructuring)
 - Name conflict
 - Syntax, comma and parenthesis
-- MAsk during input
+- Mask during input
 - gh :
   - In package.json, add:
     "scripts": {"predeploy": "npm run build","deploy": "gh-pages -d dist",}
